@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Truthy & Falsey - Foundations</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+        //truthy
+
+        var isFriend = true; // true
+
+        if(isFriend) {
+            console.log("Is Friend is true");
+        } else {
+            console.log("Not Friend");
+        }
+
+        var alex = {}; // empty object
+
+        if(alex) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy");
+        }
+
+        var friends = []; // empty array
+
+        if (friends) {
+            console.log("Is Friends is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }  
+
+        var age = 20; // number
+
+        if (age) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }
+
+        var bill = {age: 50}; // object
+
+        if (bill.age) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }  
+
+        var spaceStr = " "; // string with space
+
+        if (spaceStr) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }
+
+        var zeroStr = "0"; // string with zero
+
+        if (zeroStr) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }                           
+
+        //falsey:
+
+        var bob = null; // null
+
+        if (bob) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy");
+        }
+
+        var chris = undefined; // undefined
+
+        if (chris) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }  
+
+        var myName; // not defined
+
+        if (myName) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }    
+
+        var emptyStr = ""; // empty string
+
+        if (emptyStr) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        } 
+
+        var teamScore = 0; // zero 
+
+        if (teamScore) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        } 
+
+        var falseValue = false; // false
+
+        if (falseValue) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }
+
+        var notANumber = NaN; // NaN
+
+        if (notANumber) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }
+
+        var badMath = 10/"Hello"; // NaN
+
+        if (badMath) {
+            console.log("This is truthy");
+        } else {
+            console.log("Not truthy, maybe falsey?");
+        }    
+
+        // var mark;
+        var mark = null;
+        var mark = { _age: 30, _firstname: "Mark"}
+        // var mark = { age: 30, _firstname: "Mark" }
+        // var mark = { age: 30, firstName: "Mark" }
+        // var mark = { age: 30 }
+        // var mark = {};
+        // mark = undefined;
+        var markType = typeof mark;
+        var ageType = typeof mark.age;
+        var hasOneProperty = (mark.firstName || mark.age);
+
+        // if(markType === "object") {
+        // if(mark && mark.firstName && mark.age) {   
+        // if (mark && (mark.firstName || mark.age))  { 
+        // if(mark && hasOneProperty) {  
+        // if(mark) {    
+        if (mark !== undefined && mark !== null) { 
+            console.log(`My friend ${mark.firstName} is ${mark.age} years old`);
+        } else {
+            console.log("Unknown object");
+        } 
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

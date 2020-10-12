@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Functions - As Properties</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+        var firstDog = { name: "Rocky", type: "Dog", age: 15, bark: speak, run: function() { console.log("I am running"); }}; // <--- given anonymous function out of "run" keyword (function as a property)
+
+        // Rocky and Apollo cannot use the same bark function
+        var secondDog = { name: "Apollo", type: "Dog", age: 15, bark: speak };
+
+        function speak() {
+            console.log(rocky.name) // Rocky
+            console.log(apollo.name) // Rocky <--- same as above
+            console.log(this.name) // Apollo
+            console.log(this) // outputs the entire object { name: "Apollo", type: "Dog", age: 15, bark: speak }
+        }
+
+// "this" only points to the function that the keyword "bark" is attached to
+
+</script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

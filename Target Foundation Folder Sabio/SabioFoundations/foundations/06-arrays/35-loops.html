@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="Sabio Coding Bootcamp" />
+        <meta itemprop="image" content="https://sabio.la/Sabio.png" />
+        <link rel="shortcut icon" href="https://sabio.la/Sabio.png" />
+        <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+        <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+        <title>Loops - Foundations</title>
+        <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+
+        <script src="https://pw.sabio.la/api/js/site"></script>
+        <!-- #endregion -->
+        <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+    </head>
+
+    <body class="sabio" data-ins="" data-ui="full-height">
+        <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+        <script id="candidateCode">
+            var myArray = ['Alice', 'Bob', 'Chris', 'Donna'];
+            var myArrayOfObjects = [
+                { fistName: 'Alex', age: 21 },
+                { firstName: 'Bob', age: 20 },
+                { fistName: 'Chris', age: 30 },
+            ];
+
+            // var start = 0;
+            // var last = myArray.length - 1; // 3
+
+            console.log(myArray[0])
+            console.log(myArray[1])
+            console.log(myArray[2])
+            console.log(myArray[3])
+            
+            // where do we start; continue while this expression is true; what do you do at the end of the loop;?
+
+            // for (let i = 0; i < myArray.length; i++) { // 3 parts, where do I start, where do I end? and what do I do at the end of this iteration?
+            //     const currentElement = myArray[i];
+            //     console.log(currentElement, i)
+            //     // you may do more work with currentElement
+            // }
+
+            // for (let i = 0; i < myArrayOfObjects.length; i++) {
+            //     const currentObjects = myArrayOfObjects[i];
+
+            //     console.log(currentObjects, i);
+            //     //more work
+
+            //     // break; // breaks the execution of the loop
+            //     console.log("in lopping") // <--- won't show because break is present
+
+            // }
+
+            // console.log('done for looping');
+
+
+            // //while
+            // var start = 0;
+            // var last = myArray.length - 1; // 3
+            var j = 0;
+
+            while(j < myArrayOfObjects.length) {
+                const currentElement = myArrayOfObjects[j];
+                const memberType = typeof currentElement;
+                console.log(currentElement, j, memberType);
+                // console.log(currentElement.firstName, j); // <--- undefined (why?)
+                j++; // <--- infinite loop if you do not use an incrementor
+                if(memberType === "object" && currentElement.firstName === "Bob") {
+                    break;
+                }
+                else if (memberType !== "object") {
+                    break;
+                }
+            }
+            console.log("done while looping");
+
+
+        </script>
+        <!-- 🛑 Do Not Write Any Code Below here -->
+    </body>
+</html>

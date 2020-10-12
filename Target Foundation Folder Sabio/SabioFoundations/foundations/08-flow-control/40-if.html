@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>If Statement - Foundations</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+//    var age = 20;
+    //   var age = 21;
+    //   var drinkingAge = 21;
+    //   var osOfAge = (age >= drinkingAge);  
+
+        // if(true)
+        // if(age >= 21)
+        // if(isOfAge)
+        // if(age = drinkingAge) {
+        // console.log("is of drinking age"); 
+        // }
+
+        //  var favColor = "red";
+        //  var targetColor = "blue";
+        // var favColor = "green";
+        var favColor = "orange";
+
+        //  if(favColor === targetColor)   {
+        //      console.log("colors Match!")
+        //  } 
+
+        //  if(favColor !== targetColor)   {
+        //      console.log("colors DO NOT Match!")
+        //  } 
+
+        if (favColor === "blue") {
+                // console.log("Your favorite color is Red")
+                console.log(`Your favorite color is ${favColor}`); //checks condition, yields false, continues down the block of code
+        } 
+
+        else if (favColor === "red") {
+                console.log(`Your favorite color is ${favColor}`); // yields true, stops running code here
+        } 
+
+
+        if (favColor === "green") {
+                console.log(`Your favorite color is ${favColor}`); // does not run
+        } 
+
+        else {
+            console.log(`Unknown color is ${favColor}`); // if all are false 
+        }
+
+        // var alex = {firstName: "Alex"};
+        // var alex = { firstName: "Alex", age: 21 };
+        var alex = { firstName: "Alex", age: 30 };
+        // var friend = alex;
+        // var friend = {firstName: "Bob"};
+        var friend = { firstName: "Bob", age: 25 };
+        // var alexType = typeof alex;
+        var friendType = typeof friend;
+
+        // if(friend === alex) {
+        //     console.log("same person");
+        // }
+        // else if(friendType === "object") {
+        // // elseif(alexType === "object")    
+        //     console.log(friend.firstName)
+        // }
+
+       if(alex.firstName.startsWith("A")) {
+           console.log("Starts with A");
+        }
+        else {
+            console.log("Does not start with A");
+        }
+
+       if(friend.age > alex.age) {
+           console.log(`${friends.firstName} is older than ${alex.firstName}`);
+       } 
+       else {
+           console.log(`${alex.firstName} is older than ${friend.firstName}`);
+       }
+
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

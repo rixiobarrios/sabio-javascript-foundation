@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Functions - Return Statment</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+    // function sayHello() {
+    function getGreeting() {    
+        var message = "Hello World";
+        // console.log(message);
+        return message;
+    }  
+    // sayHello();
+
+    // var myGreeting = sayHello();
+    var myGreeting = getGreeting();
+
+    // function addNumbers() {
+    function getResult() {   
+        var result = 5 + 6;
+        // console.log(result);
+        return result;
+    }  
+
+    var myResult = getResult();
+
+    // function getPet() {
+    //     // var fiddo = {type: "Dog", name: "Fiddo"};
+    //     var fiddo = {};
+    //     fiddo.type = "Dog";
+    //     fiddo.name = "Fiddo"
+    //     return fiddo;
+    // }
+
+    function getPet() {
+        var fiddo = {};
+        fiddo.type = "Dog";
+        return fiddo;
+
+        console.log("after the return statement"); // not going to run after return statement
+
+        fiddo.name = "Fiddo"; // not executed
+    }
+
+    var myFavPet = getPet();
+
+    function getPets() {
+        var pet1 = {type: "Dog"};
+        var pet2 = { type: "Cat" };
+        var pet3 = { type: "Fish" };
+        var myPets = [pet1, pet2, pet3];
+
+        return myPets;
+    }
+
+    var myPets = getPets();
+
+
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

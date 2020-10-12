@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Functions - Defining in Different Ways</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+
+        //speakArrow(); // speakArrow is not a function, not defined here in this line
+        //speak(); // it a declared function and it works because of hoisting
+
+        //speakExp(); // speakExp is not a function, not defined here in this line
+        // console.log(speakExp); // undefined
+        // console.log(something); // not defined
+
+        // declared
+        function speak() { // gets hoisted to the top
+            console.log("Hello", this); 
+        }
+
+        // function expression
+        var speakExp = function() {
+            console.log("Hello speakExp", this);
+        }
+        // speakExp()// is defined and it outputs its object in this line
+
+        // arrow function
+        // var speakArrow = () => {
+        //     console.log("Hello speakArrow", this);
+        // }
+        var speakArrow = () => console.log("Hello speakArrow", this); // one line arrow function
+
+        // var quickReturn = function () { // not an arrow function
+        //     return 8;
+        // }
+
+        var quickReturn = () => 8; // one line arrow function with implied return
+
+        // anonymous function or anonymous function expression
+        (function() {
+            var myMessage = "Hi";
+            console.log(myMessage);
+        }()) // <--- immediately invoked function expression
+
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

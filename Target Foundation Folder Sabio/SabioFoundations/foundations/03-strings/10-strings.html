@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Strings - Foundations</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+    var message = " This is an array of characters. ";
+    // var shortMessage = "Hi!";
+    // var first = "H"; // index 0
+    // var second = "i"; // index 1
+    // var third = "!"; // index 2
+
+    // console.log(shortMessage[0]); // "H"
+    // console.log(shortMessage[1]); // "i"
+    // console.log(shortMessage[2]); // "!"
+    // console.log(shortMessage.length) // 3
+
+    // message = message.string(); // Reassigns value to new trimmed string
+
+    // console.log(message.trim()) // Takes out spaces in the beginning and end of a string creating a new string
+
+    // renderObjects({ message });
+
+    var trimMessage = message.trim(); // Creates a new array without the spaces at the beginning and end
+
+    message = trimMessage;
+
+    // console.log(message.indexOf("T")); // index 1
+    // console.log(message.indexOf("a")); // index 9 <--- first "a" in string
+    // console.log(message.indexOf("a",10)); // Next "a" character in the string is on index 12
+
+    // var isImportant = message.startsWith(" This");
+    // console.log(message.startsWith(" This"));  // true <--- startsWith() outputs a boolean   
+
+    // var lcased = message.toLowerCase(); 
+    // var areEqual = message === lcased;  // false <--- Without toLowerCase()
+    // var areEqual = message.toLowerCase() === lcased; // true <--- With toLowerCase()
+
+
+    // length
+    // trim()
+    // indexOf()
+    // startsWith()
+    // toLowerCase()
+
+    // slice() Extracts a part of a string and returns a new string
+
+    console.log(message); // "This is an array of characters" 
+    console.log(message[5]); // "i" 
+    console.log(message.slice(5)); // "is an array of characters"
+    console.log(message.slice(5, 10)); // "is an" first number represents where to start, next number where to end
+
+    // split() Splits a string into an array of substrings
+    var parts = message.split(" "); // Separates message and makes them into an array of strings
+    
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

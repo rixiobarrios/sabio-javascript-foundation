@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Functions - Params and Arguments</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+        //Arguments
+
+        function addNumbers(firstNumber, secondNumber) { //<--- parameters
+            console.log(firstNumber);
+            console.log(secondNumber);
+            console.log({firstNumber, secondNumber});
+            // var result = 0;
+            var result = firstNumber + secondNumber;
+
+            return result;
+        }
+        var myResultTriple = addNumbers(2, 2, 2); // 4
+        var myResultSingle = addNumbers(2); // NaN
+        var myResultNaN = addNumbers(2, NaN); // NaN
+        var myResultUndefined = addNumbers(2, undefined); //NaN
+        var myResultArray = addNumbers(2, [2]); // "22"
+        var myResultTwoStr = addNumbers("2", "2"); // "22"
+        var myResultEmptyArray = addNumbers(2, []); // "2"
+        var myResultEmptyObject = addNumbers(2, {}); // "2[object Object]"
+        var myResultNull = addNumbers(2, null); // 2
+        var myResultStr = addNumbers(2, "Hello"); // "2Hello"
+        var myResult = addNumbers(2, 5); // passing arguments when you have parameters/place holders
+
+        //global
+        positionOne = "first";
+        positionTwo = "second";
+        positionThree = "third";
+
+        // the name of the parameters have nothing to do with the name of the arguments or its positions
+        function paramsPosition(positionOne, positionTwo, positionThree) {
+            var local;
+
+            console.log({positionOne, positionTwo, positionThree})
+        }
+
+      paramsPosition(positionThree, positionOne, positionTwo) // {positionOne: "third", positionTwo: "first", positionThree: "second"}
+
+      //params names are just place holders
+
+      function getPet(petName, petAge) { // <--- differently named place holders
+          console.log({ petName, petAge }); // <--- same name as place holders
+      }
+
+      var namePet = "Rocky";
+      var agePet = 11;
+
+      var pet = getPet(namePet, agePet); // <--- name of variables for parameter/ place holders {petName: "Rocky", petAge: 11}
+
+    // var pet = getPet(agePet, namePet); // {petName: 11, petAge: "Rocky"}
+
+    // first argument presented becomes the first parameter, second argument presented becomes the second argument
+
+    function outputPet(aPet) { // <---reference type passing/received as a parameter
+        aPet.age = 8; // changed the age property
+        console.log(aPet);
+    }
+
+    var nameFish = "Lucy";
+    var ageFish = 11;
+    var lucy = {name: nameFish, age: ageFish}
+
+outputPet(lucy); // <--- passing reference type // {name: "Lucy", age: 8}
+
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>

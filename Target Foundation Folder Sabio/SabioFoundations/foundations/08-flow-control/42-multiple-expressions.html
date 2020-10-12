@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- #region Sabio Code - You can Fold this region to remove it from sight -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sabio Coding Bootcamp" />
+    <meta itemprop="image" content="https://sabio.la/Sabio.png">
+    <link rel="shortcut icon" href="https://sabio.la/Sabio.png">
+    <link rel="icon" type="image/png" href="https://sabio.la/Sabio.png" />
+    <!-- Do Not Change the HTML title or anything between this line and the line with the 💘's -->
+    <title>Multiple Expressions</title>
+    <link href="https://pw.sabio.la/dist/all-site.css" rel="stylesheet" />
+    
+    <script src="https://pw.sabio.la/api/js/site"></script>
+    <!-- #endregion -->
+    <!-- I 💘 Code, You 💘 Code, We all 💘 Code -->
+</head>
+
+<body class="sabio" data-ins="" data-ui="full-height">
+    <!--👇🏻 All your JavaScript code goes below here inside this script tag 👇🏻 -->
+    <script id="candidateCode">
+
+    var friend1 = { firstName: "Ale", lastName: "Smith", age: 20}; 
+
+    // friend1 = "Alex";   
+
+    var myFriend;    
+    var isOfAge;
+    var result;
+
+    // if(friend1. age >= 21) {
+    //     isOfAge = true;
+    // } else {
+    //     isOfAge = false;
+    // }
+
+    // var value = expression ? valueFirTrue : valueForFalse;
+    isOfAge = friend1.age >= 21 ? true : false; // ternary operation
+    myFriend = friend1.firstName === "Alex" ? friend1 : {};
+    result =  typeof friend1 === "object" ? friend1.firstName === "Alex" ? friend1 : "Not a friend" : false; // nested ternary operation
+
+    console.log(isOfAge);
+    console.log(myFriend);
+    console.log(result);
+
+    </script>
+    <!-- 🛑 Do Not Write Any Code Below here -->
+</body>
+
+</html>
